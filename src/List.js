@@ -6,7 +6,9 @@ export default function List() {
   const r = 50
   const list = [3, 6, 1, 2]
     return (
-        list.map(item=> (
+      <div>
+
+        {list.map(item=> (
           <svg style = {{ width: "150", height:"200"}}>
             <defs>
               <marker id="arrow" markerWidth="5" 
@@ -39,7 +41,17 @@ export default function List() {
               marker-end="url(#arrow)"
             />
           </svg>
-        ))
+        ))}
+        <svg style = {{ width: "150", height:"200"}}>
+        <text
+              x = "50"
+              y = "85"
+              textAnchor="middle"
+              fill="#d06034"
+            >X</text>
+        </svg>
+      </div>
+        
         
       )
 
