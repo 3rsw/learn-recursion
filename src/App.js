@@ -3,6 +3,7 @@ import './App.css';
 import  Code from './Code';
 import FwdBwd from './FwdBwd';
 import CursorIter from './CursorIter'
+import List from './List'
 
 const code_recursive = 
 `int rec_min(struct node *head) {
@@ -54,7 +55,10 @@ function App() {
             <option value="recursive">recursively</option>
           </select>
         </div>
-
+        <div id="diagram-item">
+          <List></List>
+        </div>
+        
 
         <div id="stack-item">
           <p>Stack frames go here!!!</p>
